@@ -26,7 +26,7 @@ public class ImageMapper {
         return ImageDTO
                 .builder()
                 .url(url)
-                .extension(image.getExtension().name())
+                .extension(image.getExtension() != null ? image.getExtension().name() : "")
                 .name(image.getName())
                 .size(image.getSize())
                 .uploadDate(image.getUploadDate().toLocalDate())

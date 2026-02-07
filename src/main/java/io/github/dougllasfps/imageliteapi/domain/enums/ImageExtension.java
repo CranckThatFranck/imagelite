@@ -8,7 +8,9 @@ import java.util.Arrays;
 public enum ImageExtension {
     PNG(MediaType.IMAGE_PNG),
     GIF(MediaType.IMAGE_GIF),
-    JPEG(MediaType.IMAGE_JPEG);
+    JPEG(MediaType.IMAGE_JPEG),
+    WEBP(MediaType.parseMediaType("image/webp")),
+    BMP(MediaType.parseMediaType("image/bmp"));
 
     @Getter
     private MediaType mediaType;
